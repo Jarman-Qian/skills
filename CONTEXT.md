@@ -6,6 +6,8 @@
 
 **技能**：一个独立的 AI 指令文件，定义了一段对话协议或自动化流程，由用户通过 `/<技能名>` 手动触发。每个技能对应一个独立目录，`SKILL.md` 为唯一入口。
 
+**in-process**：`skills/in-process/` 目录，存放尚未开发完成或正在测试的技能。此目录下的技能不被工具加载。
+
 **分类**：技能的组织维度。按技能的作用领域划分，如 `learning`（学习与认知验证）。分类即 `skills/` 下的子目录名。
 
 **SKILL.md**：技能的定义文件，包含 YAML frontmatter（name、description、disable-model-invocation）和 Markdown 正文。是 AI 工具加载技能的入口。
